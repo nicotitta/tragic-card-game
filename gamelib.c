@@ -845,7 +845,7 @@ void gioca_carta(struct Mago *giocatore, struct Mago *giocatore0, unsigned int *
   //Il punatatore n_carte_mano rappresenta il numero delle carte nella mano del mago che attacca
 
   struct Carta *carta_giocata = NULL;
-  static int danno_creatura = 0;
+  // static int danno_creatura = 0;
 
   //Si effettua un controllo per verificare se nella mano del mago ci siano carte:
   int i = 0;

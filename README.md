@@ -38,8 +38,22 @@ program entry point (`main`), with no external dependencies.
 
 ## Build & run
 
+Compile each translation unit, then link:
+
 ```bash
-gcc -Wall -o tragic main.c gamelib.c
+gcc -c main.c    -std=c11 -Wall
+gcc -c gamelib.c -std=c11 -Wall
+gcc -o tragic main.o gamelib.o
 ./tragic
 ```
 
+Or build in a single step:
+
+```bash
+gcc -std=c11 -Wall -o tragic main.c gamelib.c
+./tragic
+```
+
+## Context
+
+Originally developed as my final project for the Procedural Programming course during my BSc in Computer Science at Università di Perugia.
