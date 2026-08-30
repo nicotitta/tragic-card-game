@@ -1,4 +1,4 @@
-# Tragic — A Card Game in C
+# Tragic: A Card Game in C
 
 A turn-based card game for two players, written in C and played from the
 terminal. Players build a deck, summon creatures, cast effect cards, and
